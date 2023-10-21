@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="script.js"></script>
+  <title>Aventura Medieval</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Tangerine&display=swap" rel="stylesheet">
+</head>
+<body class="full">
+  <header>
+    <h1>Aventura Medieval</h1>
+  </header>
+  <main>
+    <section id="adventurers-container">
+      <h2>Heróis</h2>
+      <ul id="list-of-adventurers"></ul>
+      <div>
+        <button type="button" id="lethal-adventurer">Pessoa aventureira mais letal</button>
+        <button type="button" id="sort-by-level">Ordenar por level</button>
+      </div>
+    </section>
+
+    <section id="features-and-card-container">
+      <section id="selected-card">
+        <div>
+          <img src="./images/default_picture.png" alt="Personagem selecionado" id="selected-image">
+        </div>
+        <p id="selected-name">Nome: -</p>
+        <p id="selected-race">Raça/Tipo: -</p>
+      </section>
+      <section id="features-container">
+        <button type="button" id="reset">Reiniciar</button>
+      </section>
+    </section>
+
+    <section id="monsters-container">
+      <h2>Monstros</h2>
+      <ul id="list-of-monsters"></ul>
+      <div>
+        <button type="button" id="feared-monster">Monstro mais temido</button>
+        <button type="button" id="sort-by-strength">Ordenar por força</button>
+      </div>
+    </section>
+  </main>
+
+  <div id="full">
+    <button>Iniciar</button>
+  </div>
+</body>
+</html>
