@@ -1,5 +1,5 @@
 const findCharacter = () => {
-  // Desenvolva seu código dentro dessa função...
+  // aaa
 };
 
 export default findCharacter;
