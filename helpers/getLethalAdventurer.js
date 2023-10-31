@@ -1,11 +1,6 @@
-function calculatePower(weaponsArr, character) {
-  let totalDamage = 0;
-
-  const { weapons } = character;
-
-  weapons.forEach((weapon) => {
-    totalDamage += weaponsArr.find(({ id }) => weapon === id).damage;
-  });
+function calculatePower(weapons, character) {
+  const charWeapons = weapons.filter((weapon) => character.weapons.includes(weapon.id));
+  const totalDamage = charWeapons.reduce((acc, weapon) => acc + weapon.damage, 0);
 
   return totalDamage;
 }
